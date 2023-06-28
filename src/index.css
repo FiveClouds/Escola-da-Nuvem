@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+html {
+  font-size: 62.5%;
+/* fazendo com que 1rem equivale a 10px, pra facilitar nas contas */
+}
+
+
+body {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-float {
+  animation: float 8s infinite;
+}
+
+@keyframes float2 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-0.5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-float2 {
+  animation: float 10s infinite;
+}
